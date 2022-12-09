@@ -5,8 +5,7 @@ function WantToRead(props) {
 
     return (
         <div className="WantToRead" >
-            <h2> Want To Read </h2>
-            <table className="table">
+            <table className="table table-striped">
             <thead>
                 <tr>
                 <th scope="col">Title</th>
@@ -23,7 +22,7 @@ function WantToRead(props) {
                     <td>
                         {" "}
                         <button
-                        className= {b.done === 1 ? "done" : "btn btn-primary"}
+                        className= {b.done === 1 ? "done" : "regbtn"}
                         type="button"
                         onClick={() => props.completeBookCb(b.id)}
                         >

@@ -1,7 +1,17 @@
 .AddBookForm{
-    padding: 50px;
+    padding: 40px;
+    background-color: #F1DEDC;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.AddBookForm h2 {
-    margin-bottom: 20px;
+.descrip {
+    margin-bottom: 40px;
+    /* font-style: italic; */
+    margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
 }
 
+.btn {
+    margin-top: 20px;
+}
