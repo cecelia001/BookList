@@ -44,7 +44,7 @@ let id = req.params.id;
 try {
   let result = await db(`SELECT * FROM books WHERE id=${id}`);
   if (result.data.length === 0) {
-    res.status(404).send({ error: "Stop not found" });
+    res.status(404).send({ error: "Book not found" });
   } else {
     await db(`DELETE FROM books WHERE id=${id}`);
     let result = await db(`SELECT * FROM books`);
@@ -55,5 +55,25 @@ try {
   res.status(500).send({ error: err.message });
 }
 });
+
+//PATCH mark book as read
+router.patch('/:id', async function (req, res){
+  let id = req.params.id;
+  let  done  = req.body;
+  
+  try {
+    let result = await db(`SELECT * FROM books WHERE id=${id}`);
+    if (result.data.length === 0) {
+      res.status(404).send({ error: "Book not found" });
+    } else {
+      await db(`UPDATE books SET done=${done.done} WHERE id=${id}`);
+      let result = await db(`SELECT * FROM books`);
+      let books = result.data;
+      res.status(201).send(books);
+    }
+  } catch (err) {
+    res.status(500).send({ error: err.message });
+  }
+  });
 
 module.exports = router;

@@ -66,12 +66,30 @@ async function deleteBook(id) {
   }
 }
 
+async function completeBook(id) {
+  let options = {
+    method: "PATCH",
+    }
+
+  try {
+    let response = await fetch (`/books/${id}`, options);
+    if (response.ok) {
+      let data = await response.json();
+      setBooks(data)
+    } else {
+      console.log(`server error: ${response.status}: ${response.statusText}`);
+    }
+  } catch (err) {
+    console.log(`network error: ${err.message}`);
+  }
+}
+
   return (
     <div className="App">
         <h1> My Book List </h1>
         <h2> Keep track of what books you want to read! </h2>
         <AddBookForm books={books} addBookCb={addBook}/>
-        <WantToRead books={books} deleteBookCb={deleteBook} />
+        <WantToRead books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
     </div>
   );
 }
