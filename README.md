@@ -31,10 +31,10 @@ This app allows for users to add books they want to read to a list. Books can be
 
 ## DatabaseSchema
 
-
+![Alt text](BookListDBSchema.png)
 
 ## User flow diagram
-
+![Alt text](BookList%20UserFlow.png)
 
 
 ## Possible Future Extensions
