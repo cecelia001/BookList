@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
+import WantToRead from "./components/WantToRead"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <h1> My Book List </h1>
+      <WantToRead books={books} />
     </div>
   );
 }
