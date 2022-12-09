@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import './AddBookForm.css';
-
 
 const BLANK_FORM = {
     title: "",
     author: ""
 };
-
 
 
 function AddBookForm(props) {
