@@ -91,8 +91,10 @@ async function completeBook(id) {
 
   return (
     <div className="App">
+      <div className="backgroundimg">
         <h1> My Book List </h1>
-        <h2> Keep track of what books you want to read. </h2>
+        <h2 className="descrip"> Keep track of what books you want to read. </h2>
+      </div>
         <AddBookForm books={books} addBookCb={addBook}/>
         <WantToRead books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
     </div>

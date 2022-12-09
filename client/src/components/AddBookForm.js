@@ -27,7 +27,7 @@ function AddBookForm(props) {
 
     return (
         <div className="AddBookForm" >
-        <h2 className="descrip"> Add a book</h2>
+        <h2 className= "label"> Add a book</h2>
         
         <form onSubmit={handleSubmit}>
             <div className="row justify-content-center">
@@ -55,7 +55,7 @@ function AddBookForm(props) {
             
             <div className="row justify-content-center">
                 <div className="col-md-2 mb-3">
-                    <button className="btn btn-primary" type="submit"> Add Book </button>
+                    <button className="btn btn-primary" type="submit"> Submit </button>
                 </div>
             </div>
 

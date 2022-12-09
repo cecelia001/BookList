@@ -9,9 +9,9 @@ h1 {
   font-size: 70px;
 }
 
-h2 {
+.descrip {
   margin-top: 40px;
   font-size: 30px;
   font-weight: 900;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace
 }
