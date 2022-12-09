@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
 import WantToRead from "./components/WantToRead"
+import AddBookForm from "./components/AddBookForm"
 
 function App() {
 
@@ -24,9 +25,33 @@ function App() {
     }
   }
 
+  async function addBook(formData) {
+    let options = {
+        method: "POST",
+        headers: { "content-Type" : "application/json" },
+        body: JSON.stringify({
+            title: formData.title,
+            author: formData.author,
+        })
+    };
+
+    try{      
+    let response = await fetch("/books", options);
+    if (response.ok) {
+      let newBook = await response.json();
+      getBooks(newBook)
+    } else {
+      console.log(`Server error: ${response.status} ${response.statusText}`);
+    }
+  } catch (err) {
+    console.log(`Network error: ${err.message}`);
+  }
+}
+
   return (
     <div className="App">
       <h1> My Book List </h1>
+      <AddBookForm books={books} addBookCb={addBook}/>
       <WantToRead books={books} />
     </div>
   );

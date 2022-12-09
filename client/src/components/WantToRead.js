@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 import './WantToRead.css';
 
 function WantToRead(props) {
 
-
-
     return (
         <div className="WantToRead" >
+            <h2> Want To Read </h2>
             <table className="table">
             <thead>
                 <tr>
