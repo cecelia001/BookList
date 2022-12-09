@@ -23,17 +23,17 @@ function WantToRead(props) {
                     <td>
                         {" "}
                         <button
-                        className="btn btn-primary"
+                        className= {b.done === 1 ? "done" : "btn btn-primary"}
                         type="button"
                         onClick={() => props.completeBookCb(b.id)}
                         >
-                        +
+                        ✓
                         </button>{" "}
                     </td>
                     <td>
                         {" "}
                         <button
-                        className="btn btn-primary"
+                        className="deletebtn"
                         type="button"
                         onClick={() => props.deleteBookCb(b.id)}
                         >
