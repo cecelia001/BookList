@@ -35,7 +35,7 @@ function WantToRead(props) {
                         <button
                         className="btn btn-primary"
                         type="button"
-                        // onClick={() => deleteStop(b.id)}
+                        onClick={() => props.deleteBookCb(b.id)}
                         >
                         X
                         </button>{" "}

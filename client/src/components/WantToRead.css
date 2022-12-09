@@ -1,8 +1,4 @@
-.WantToRead {
-    /* background-color: black; */
-    /* color: whitesmoke; */
-}
-
-h1 {
-    /* color: whitesmoke; */
-}
+.table {
+    margin: auto;
+    width: 75% !important; 
+ }
