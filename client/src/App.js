@@ -32,6 +32,7 @@ function App() {
         body: JSON.stringify({
             title: formData.title,
             author: formData.author,
+            done: 0,
         })
     };
 
@@ -69,6 +70,10 @@ async function deleteBook(id) {
 async function completeBook(id) {
   let options = {
     method: "PATCH",
+    headers: { "content-Type" : "application/json" },
+    body: JSON.stringify({
+        done: 1,
+      })
     }
 
   try {

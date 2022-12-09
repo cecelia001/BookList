@@ -22,8 +22,8 @@ router.post('/', async function (req,res){
 let { title, author } = req.body;
 
 let sql = `
-  INSERT INTO books (title, author)
-  VALUES ('${title}', '${author}')
+  INSERT INTO books (title, author, done)
+  VALUES ('${title}', '${author}', 0)
 `;
 
 try {
@@ -59,7 +59,7 @@ try {
 //PATCH mark book as read
 router.patch('/:id', async function (req, res){
   let id = req.params.id;
-  let  done  = req.body;
+  let done = req.body;
   
   try {
     let result = await db(`SELECT * FROM books WHERE id=${id}`);

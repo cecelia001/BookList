@@ -25,7 +25,7 @@ function WantToRead(props) {
                         <button
                         className="btn btn-primary"
                         type="button"
-                        // onClick={() => deleteStop(b.id)}
+                        onClick={() => props.completeBookCb(b.id)}
                         >
                         +
                         </button>{" "}
