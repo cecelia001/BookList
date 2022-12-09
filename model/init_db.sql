@@ -5,4 +5,4 @@ CREATE TABLE `books` (
     `author` VARCHAR(100)
 ); 
 INSERT INTO `books` (title, author)
-    VALUES ('The Great Gatsby', 'F Scott Fitzgerald'), ('The Silent Patient', 'Alex Michaelides'), ('Behind Closed Doors', 'BA Paris'), ('The Guest List', 'Lucy Foley');
+    VALUES ('The Great Gatsby', 'F. Scott Fitzgerald'), ('The Silent Patient', 'Alex Michaelides'), ('Behind Closed Doors', 'B.A. Paris'), ('The Guest List', 'Lucy Foley');
