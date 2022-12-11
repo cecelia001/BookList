@@ -1,7 +1,7 @@
 # BookList
 
 ## About
-This app allows for users to add books they want to read to a list. Books can be marked read or deleted from the list.
+This app allows users to create a list of books they want to read. Books can be added to the list, marked as completed, or deleted.
 
 ## Setup
 
