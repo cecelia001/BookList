@@ -17,7 +17,7 @@ router.get('/', async function(req, res) {
   }
 });
 
-// ADD new book
+// ADD book
 router.post('/', async function (req,res){
 let { title, author } = req.body;
 
@@ -37,7 +37,7 @@ try {
 }
 });
 
-//DELETE book from list
+//DELETE book
 router.delete('/:id', async function (req, res){
 let id = req.params.id;
 
@@ -56,7 +56,7 @@ try {
 }
 });
 
-//PATCH mark book as read
+//PATCH book as read
 router.patch('/:id', async function (req, res){
   let id = req.params.id;
   let done = req.body;

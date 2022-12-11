@@ -17,6 +17,7 @@ function AddBookForm(props) {
         props.addBookCb(formData);
         setFormData(BLANK_FORM);
     }
+
     function handleChange(event) {
         let {name, value} = event.target;
         setFormData((data) => ({ ...data, [name]: value}))
@@ -58,9 +59,8 @@ function AddBookForm(props) {
             </div>
 
             </div>
-
       </form>
-
+      
         </div>
     );
 }

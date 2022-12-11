@@ -1,7 +1,7 @@
 import React from "react";
-import './WantToRead.css';
+import './BookTable.css';
 
-function WantToRead(props) {
+function BookTable(props) {
 
     return (
         <div className="WantToRead" >
@@ -20,24 +20,22 @@ function WantToRead(props) {
                     <td className="title">{b.title}</td>
                     <td className="author">{b.author}</td>
                     <td>
-                        {" "}
                         <button
                         className= {b.done === 1 ? "done" : "regbtn"}
                         type="button"
                         onClick={() => props.completeBookCb(b.id)}
                         >
                         ✓
-                        </button>{" "}
+                        </button>
                     </td>
                     <td>
-                        {" "}
                         <button
                         className="deletebtn"
                         type="button"
                         onClick={() => props.deleteBookCb(b.id)}
                         >
                         X
-                        </button>{" "}
+                        </button>
                     </td>
                 </tr>                    
                 ))}
@@ -46,4 +44,4 @@ function WantToRead(props) {
         </div>
     );
 }
-export default WantToRead;
+export default BookTable;

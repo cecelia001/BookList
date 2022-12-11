@@ -6,4 +6,4 @@ CREATE TABLE `books` (
     `done` BOOLEAN NOT NULL
 ); 
 INSERT INTO `books` (title, author, done)
-    VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', true), ('The Silent Patient', 'Alex Michaelides', false), ('Behind Closed Doors', 'B.A. Paris', false), ('The Guest List', 'Lucy Foley', false);
+    VALUES ('The Silent Patient', 'Alex Michaelides', true), ('The Truth About Luck', 'Iain Reid', false), ('From the Ashes', 'Jesse Thistle', false), ('The Psychology of Time Travel', 'Kate Mascarenhas', false);

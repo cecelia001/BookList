@@ -1,7 +1,7 @@
-import './App.css';
 import React, { useEffect, useState } from "react";
-import WantToRead from "./components/WantToRead"
+import BookTable from "./components/BookTable"
 import AddBookForm from "./components/AddBookForm"
+import './App.css';
 
 function App() {
 
@@ -95,8 +95,8 @@ async function completeBook(id) {
         <h1> My Book List </h1>
         <h2 className="descrip"> Keep track of what books you want to read. </h2>
       </div>
-        <AddBookForm books={books} addBookCb={addBook}/>
-        <WantToRead books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
+        <AddBookForm addBookCb={addBook}/>
+        <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
     </div>
   );
 }
