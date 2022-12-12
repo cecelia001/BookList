@@ -39,6 +39,7 @@ This app allows users to create a list of books they want to read. Books can be 
 
 
 ## Possible Future Extensions
+- New view for books that have been completed
 - Rate books
 - List books in alphabetical order by title or author
 - Search books function
