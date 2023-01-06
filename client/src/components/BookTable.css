@@ -1,6 +1,7 @@
 .table {
     margin: auto;
     width: 75% !important; 
+    margin-top: 50px;
  }
 
  th, td {
