@@ -9,9 +9,8 @@
 .label {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    color: whitesmoke;
-    background-color: gray;
-    max-width: 300px;
+    color: black;
+    font-size: 40px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 40px;
