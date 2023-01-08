@@ -26,7 +26,6 @@ function AddBookForm(props) {
 
     return (
         <div className="AddBookForm" >
-        {/* <h2 className= "label"> Add a book</h2> */}
         
         <form onSubmit={handleSubmit}>
             <div className="row justify-content-center">

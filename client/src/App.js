@@ -97,6 +97,10 @@ async function completeBook(id) {
       </div>
         <AddBookForm addBookCb={addBook}/>
         <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
+      <div className ="endtag">
+        <h3> Created by Cecelia Fowler.</h3>
+      </div>
+        
     </div>
   );
 }
