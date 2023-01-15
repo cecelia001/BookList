@@ -1,14 +1,20 @@
 .AddBookForm {
     padding: 75px;
     background-image: url("https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    opacity: 0.8;
     background-position: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    max-height: 225px;
+    max-height: 250px;
     max-width: 90%;
     margin: auto;
 }
 
 .btn {
     margin-top: 20px;
+
+}
+
+input {
+    height: 55px;
 }
