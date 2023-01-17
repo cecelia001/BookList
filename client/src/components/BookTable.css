@@ -2,10 +2,12 @@
     margin: auto;
     width: 75% !important; 
     margin-top: 50px;
+    color: white;
  }
 
  th, td {
     font-size: 25px;
+    color: white;
  }
 
 

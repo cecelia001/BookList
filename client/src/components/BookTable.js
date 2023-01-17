@@ -5,7 +5,7 @@ function BookTable(props) {
 
     return (
         <div className="WantToRead" >
-            <table className="table table-striped">
+            <table className="table">
             <thead>
                 <tr>
                 <th scope="col">Title</th>
