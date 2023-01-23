@@ -91,22 +91,29 @@ async function completeBook(id) {
 
   return (
     <div className="App">
-        <div className="jumbotron">
-          <h1 className="display-4">Hello, world!</h1>
-          <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr className="my-4"/>
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p className="lead">
-            <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
+    <div className="p-5 text-center bg-image rounded-3" style={{
+        backgroundImage: `url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp')`}}
+        >
+      <div className="mask" style={{backgroundColor: `rgba(0, 0, 0, 0.6)`}}>
+        <div className="d-flex justify-content-center align-items-center h-100">
+          <div className="text-white">
+            <h1 className="mb-3">Heading</h1>
+            <h4 className="mb-3">Subheading</h4>
+            <a className="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+          </div>
         </div>
-        <AddBookForm addBookCb={addBook}/>
-        <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
-      <div className ="endtag">
-        <h3> Created by Cecelia Fowler.</h3>
       </div>
-        
+      </div>
+      <AddBookForm addBookCb={addBook}/>
+      <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
+    <div className ="endtag">
+      <h3> Created by Cecelia Fowler.</h3>
     </div>
+    </div>
+  
+
+
+  
   );
 }
 
