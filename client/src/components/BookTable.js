@@ -1,5 +1,5 @@
 import React from "react";
-import { CDBRating, CDBContainer } from 'cdbreact';
+
 import './BookTable.css';
 
 function BookTable(props) {
@@ -39,11 +39,7 @@ function BookTable(props) {
                         </button>
                     </td>
                     <td>
-                    <CDBContainer>
-                        <CDBRating iconRegular />
-                        <CDBRating iconFaces fillClassName="black-text" iconRegular />
-                        <CDBRating feedback />
-                    </CDBContainer>
+
                     </td>
                 </tr>                    
                 ))}
