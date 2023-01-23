@@ -1,8 +1,8 @@
 import React from "react";
+import { CDBRating, CDBContainer } from 'cdbreact';
 import './BookTable.css';
 
 function BookTable(props) {
-
     return (
         <div className="WantToRead" >
             <table className="table">
@@ -12,6 +12,7 @@ function BookTable(props) {
                 <th scope="col">Author</th>
                 <th scope="col">Mark as Read</th>
                 <th scope="col">Delete</th>
+                <th scope="col">Rating</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,6 +37,13 @@ function BookTable(props) {
                         >
                         X
                         </button>
+                    </td>
+                    <td>
+                    <CDBContainer>
+                        <CDBRating iconRegular />
+                        <CDBRating iconFaces fillClassName="black-text" iconRegular />
+                        <CDBRating feedback />
+                    </CDBContainer>
                     </td>
                 </tr>                    
                 ))}

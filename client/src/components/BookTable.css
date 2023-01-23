@@ -45,7 +45,7 @@
     border: 1px solid transparent;
 }
 
-.table-striped>tbody>tr:nth-child(odd)>td, 
+/* .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: #c0ddf7;
- }
+   background-color: #0e487a;
+ } */
