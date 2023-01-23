@@ -10,10 +10,17 @@
     margin: auto;
 }
 
-.btn {
+#addButton {
     margin-top: 20px;
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
 }
 
 input {
     height: 65px;
+}
+
+#boxbtn {
+    text-align: center;
 }

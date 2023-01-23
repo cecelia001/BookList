@@ -9,7 +9,6 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-
 }
 
 html, body {
@@ -30,6 +29,9 @@ h1 {
 }
 
 .endtag h3{
-  font-size: 15px;
+  font-size: 17px;
   padding: 70px;
+  color: black;
+  text-align: center;
+  background-color: whitesmoke;
 }
