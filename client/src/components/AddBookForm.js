@@ -28,8 +28,8 @@ function AddBookForm(props) {
         <div className="AddBookForm" >
         
         <form onSubmit={handleSubmit}>
-            <div className="row justify-content-center">
-                <div className="col-md-4 mb-3">
+            <div className="row mb-4">
+                <div className="col">
                 <input
                     type="text"
                     placeholder = "Title"
@@ -40,7 +40,7 @@ function AddBookForm(props) {
                 />
                 </div>
 
-             <div className="col-md-4 mb-3">
+             <div className="col">
                 <input
                     type="text"
                     placeholder = "Author"
@@ -52,8 +52,8 @@ function AddBookForm(props) {
             </div>
             
             <div className="row justify-content-center">
-                <div className="col-md-2 mb-3">
-                    <button className="btn btn-primary" type="submit"> Submit </button>
+                <div className="col-md-4">
+                    <button className="btn btn-primary btn-block mb-4" type="submit"> Submit </button>
                 </div>
             </div>
 

@@ -6,7 +6,7 @@ function BookTable(props) {
     return (
         <div className="WantToRead" >
             <table className="table">
-            <thead>
+            <thead className="table-light">
                 <tr>
                 <th scope="col">Title</th>
                 <th scope="col">Author</th>
