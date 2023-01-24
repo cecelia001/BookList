@@ -1,5 +1,4 @@
 import React from "react";
-
 import './BookTable.css';
 
 function BookTable(props) {
