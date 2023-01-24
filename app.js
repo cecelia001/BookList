@@ -6,6 +6,7 @@ const cors = require('cors');                //added
 
 var indexRouter = require('./routes/index');
 var booksRouter = require('./routes/books');
+var ratingsRouter = require('./routes/ratings');
 
 var app = express();
 
@@ -18,5 +19,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/books', booksRouter);
+app.use('/ratings', ratingsRouter);
 
 module.exports = app;
