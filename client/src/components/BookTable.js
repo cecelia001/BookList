@@ -1,4 +1,5 @@
 import React from "react";
+import Rating from 'react-simple-star-rating'
 import './BookTable.css';
 
 function BookTable(props) {
