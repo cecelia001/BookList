@@ -5,9 +5,32 @@ import './BookTable.css';
 function BookTable(props) {
     const [ rating, setRating ] = useState(0);
 
-    function handleRating(rate) {
-        setRating(rate)
-        //some logic
+    useEffect(() => {
+        getRatings();
+      }, []);
+    
+      async function getRatings() {
+        try {
+          let response = await fetch ('/ratings');
+          if (response.ok) {
+            let data = await response.json();
+            setRating(data)
+          } else {
+            console.log(`server error: ${response.status}: ${response.statusText}`);
+          }
+        } catch (err) {
+          console.log(`network error: ${err.message}`);
+        }
+      }
+
+    function handleSubmit(event) {
+        setRating(rating);
+        console.log("it's working")
+    }
+    
+    function handleChange(event) {
+        let {name, value} = event.target;
+        setRating((data) => ({...data, [name]: value}))
     }
 
     return (
@@ -47,7 +70,7 @@ function BookTable(props) {
                     </td>
                     <td>
                         <Rating
-                            onClick={handleRating}
+                            onClick={handleSubmit}
                             ratingValue={rating}
                             size={30}
                             label

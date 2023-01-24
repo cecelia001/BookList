@@ -17,25 +17,25 @@ router.get('/', async function(req, res) {
   }
 });
 
-// ADD book
-// router.post('/', async function (req,res){
-// let { title, author } = req.body;
+//ADD rating
+router.post('/', async function (req,res){
+    let { book_id, rating } = req.body;
 
-// let sql = `
-//   INSERT INTO books (title, author, done)
-//   VALUES ('${title}', '${author}', 0)
-// `;
+    let sql = `
+    INSERT INTO ratings (book_id, rating)
+    VALUES (${book_id}, ${rating})
+    `;
 
-// try {
-//   await db(sql);
-//   let result = await db ('SELECT * FROM books');
-//   let books = result.data;
-//   res.status(201).send(books);
-// } catch (err) {
-//   res.status(500).send({ error: err.message });
-//   console.log(err.message);
-// }
-// });
+    try {
+        await db(sql);
+        let result = await db ('SELECT * FROM ratings');
+        let ratings = result.data;
+        res.status(201).send(ratings);
+    } catch (err) {
+        res.status(500).send({ error: err.message });
+        console.log(err.message);
+    }
+    });
 
 // //DELETE book
 // router.delete('/:id', async function (req, res){
