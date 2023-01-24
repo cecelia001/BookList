@@ -5,7 +5,7 @@ import './BookTable.css';
 function BookTable(props) {
     const [ rating, setRating ] = useState(0);
 
-    const handleRating = (rate) => {
+    function handleRating(rate) {
         setRating(rate)
         //some logic
     }
@@ -49,15 +49,14 @@ function BookTable(props) {
                         <Rating
                             onClick={handleRating}
                             ratingValue={rating}
-                            size={20}
+                            size={30}
                             label
                             transition
                             fillColor='orange'
                             emptyColor='gray'
-                            className='foo' // Will remove the inline style if applied
+                           // className='foo' // Will remove the inline style if applied
+
                         />
-                        {/* Use rating value */}
-                        {rating}
                     </td>
                 </tr>                    
                 ))}
