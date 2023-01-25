@@ -3,7 +3,7 @@ import { Rating }from 'react-simple-star-rating';
 import './BookTable.css';
 
 function BookTable(props) {
-    const [ rating, setRating ] = useState(0);
+    const [ rating, setRating ] = useState();
 
     useEffect(() => {
         getRatings();
@@ -23,8 +23,33 @@ function BookTable(props) {
         }
       }
 
+    async function addRating(rating) {
+        let options = {
+            method: "POST",
+            headers: { "content-Type" : "application/json" },
+            body: JSON.stringify({
+                book_id: rating.book_id,
+                rating: rating.number,
+            })
+        };
+    
+        try{      
+        let response = await fetch("/ratings", options);
+        if (response.ok) {
+          let newRating = await response.json();
+          setRating(newRating)
+        } else {
+          console.log(`Server error: ${response.status} ${response.statusText}`);
+        }
+      } catch (err) {
+        console.log(`Network error: ${err.message}`);
+      }
+    }
+
     function handleSubmit(event) {
-        setRating(rating);
+        event.preventDefault();
+        addRating(rating);
+        console.log(rating);
         console.log("it's working")
     }
     
@@ -32,6 +57,7 @@ function BookTable(props) {
         let {name, value} = event.target;
         setRating((data) => ({...data, [name]: value}))
     }
+
 
     return (
         <div className="WantToRead" >
@@ -69,8 +95,10 @@ function BookTable(props) {
                         </button>
                     </td>
                     <td>
-                        <Rating
-                            onClick={handleSubmit}
+   
+
+                        {/* <Rating
+                            onClick={() => addRating(b.id, rating)}
                             ratingValue={rating}
                             size={30}
                             label
@@ -78,13 +106,37 @@ function BookTable(props) {
                             fillColor='orange'
                             emptyColor='gray'
                            // className='foo' // Will remove the inline style if applied
-
-                        />
+                        /> */}
                     </td>
                 </tr>                    
                 ))}
             </tbody>
             </table>
+
+            {/* <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      Click here!
+                    </button>
+
+
+            <div className="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog" role="document">
+                          <div className="modal-content">
+                            <div className="modal-header">
+                              <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div className="modal-body">
+                              ...
+                            </div>
+                            <div className="modal-footer">
+                              <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" className="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> */}
         </div>
     );
 }
