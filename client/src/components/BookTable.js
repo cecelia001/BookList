@@ -68,7 +68,7 @@ function BookTable(props) {
                 <th scope="col">Author</th>
                 <th scope="col">Mark as Read</th>
                 <th scope="col">Delete</th>
-                <th scope="col">Rating</th>
+                {/* <th scope="col">Rating</th> */}
                 </tr>
             </thead>
             <tbody>
