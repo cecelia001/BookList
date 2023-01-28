@@ -46,17 +46,17 @@ function BookTable(props) {
       }
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        addRating(rating);
-        console.log(rating);
-        console.log("it's working")
-    }
+    // function handleSubmit(event) {
+    //     event.preventDefault();
+    //     addRating(rating);
+    //     console.log(rating);
+    //     console.log("it's working")
+    // }
     
-    function handleChange(event) {
-        let {name, value} = event.target;
-        setRating((data) => ({...data, [name]: value}))
-    }
+    // function handleChange(event) {
+    //     let {name, value} = event.target;
+    //     setRating((data) => ({...data, [name]: value}))
+    // }
 
 
     return (
