@@ -60,7 +60,9 @@ function Rating(props) {
 
 
     return (
-
+        <div className="Rating">
+            
+        </div>
     );
 }
 export default Rating;
