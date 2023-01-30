@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Rating }from 'react-simple-star-rating';
+import $ from 'jquery';
 
 
 function Rating(props) {
