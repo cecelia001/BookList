@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BookTable from "./components/BookTable"
 import AddBookForm from "./components/AddBookForm"
+import Rating from "./components/Rating"
 import './App.css';
 
 function App() {
@@ -106,6 +107,7 @@ async function completeBook(id) {
       <div>
       <AddBookForm addBookCb={addBook}/>
       <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
+      <Rating />
         <div className ="endtag">
           <h3> Created by Cecelia Fowler.</h3>
         </div>
