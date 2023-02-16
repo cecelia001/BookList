@@ -95,7 +95,7 @@ async function completeBook(id) {
       <div className="container">
             <h1 className="mb-3">BookList</h1>
             <img src={pic} alt="Book Stack"/>
-            <h4 className="mb-3">Keep track of the books you want to read and what you have completed.</h4>
+            <h4 className="mb-3">Keep track of the books you want to read and what you've finished.</h4>
       </div>
       <div className="bottom">
       <AddBookForm addBookCb={addBook}/>
