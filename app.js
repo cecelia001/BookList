@@ -6,7 +6,6 @@ const cors = require('cors');                //added
 
 var indexRouter = require('./routes/index');
 var booksRouter = require('./routes/books');
-var ratingsRouter = require('./routes/ratings');
 
 var app = express();
 
