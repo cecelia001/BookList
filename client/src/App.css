@@ -9,6 +9,7 @@
 }
 
 .container{
+  display: grid;
   max-width: 70%;
   height: 800px;
 }
