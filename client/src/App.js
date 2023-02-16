@@ -93,13 +93,13 @@ async function completeBook(id) {
   return (
     <div className="App">
       <div className="container">
-            <h1 className="mb-3">BookList</h1>
+            <h1>BookList</h1>
             <img src={pic} alt="Book Stack"/>
-            <h4 className="mb-3">Keep track of the books you want to read and what you've finished.</h4>
+            <h4>Keep track of the books you want to read and what you've finished.</h4>
       </div>
       <div className="bottom">
-      <AddBookForm addBookCb={addBook}/>
-      <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
+        <AddBookForm addBookCb={addBook}/>
+        <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
         <div className ="endtag">
           <h3> Created by Cecelia Fowler</h3>
         </div>
