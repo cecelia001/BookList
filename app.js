@@ -19,6 +19,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/books', booksRouter);
-app.use('/ratings', ratingsRouter);
 
 module.exports = app;
