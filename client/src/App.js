@@ -93,9 +93,14 @@ async function completeBook(id) {
   return (
     <div className="App">
       <div className="container">
-            <h1>BookList</h1>
-            <img src={pic} alt="Book Stack"/>
-            <h4>Keep track of the books you want to read and what you've finished.</h4>
+        <div>
+          <h1>BookList</h1>
+          <h4>Keep track of the books you want to read and what you've finished.</h4>
+        </div>
+        <div>
+          <img src={pic} alt="Book Stack"/>
+        </div>         
+            
       </div>
       <div className="bottom">
         <AddBookForm addBookCb={addBook}/>
