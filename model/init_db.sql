@@ -8,4 +8,3 @@ CREATE TABLE `books` (
 
 INSERT INTO `books` (title, author, done)
     VALUES ('The Silent Patient', 'Alex Michaelides', true), ('The Truth About Luck', 'Iain Reid', false), ('From the Ashes', 'Jesse Thistle', false), ('The Psychology of Time Travel', 'Kate Mascarenhas', false);
-
