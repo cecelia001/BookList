@@ -16,9 +16,8 @@
 .container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 60%;
+  max-width: 80%;
   height: 700px;
-
 }
 
 html, body {
@@ -49,8 +48,8 @@ h4 {
 }
 
 img {
-  width: 80%;
-  height: 100%;
+  /* width: 80%;
+  height: 100%; */
   object-fit: cover;
   aspect-ratio: 1/1;
   float:right;
