@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BookTable from "./components/BookTable"
 import AddBookForm from "./components/AddBookForm"
+import pic from "./images/books.png"
 import './App.css';
 
 function App() {
@@ -92,25 +93,16 @@ async function completeBook(id) {
   return (
     <div className="App">
       <div className="container">
-    <div className="p-5 text-center bg-image rounded-3" style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')`,
-        size: '400px'}}>
-      <div className="mask" style={{backgroundColor: `rgba(0, 0, 0, 0.4)`}}>
-        <div className="d-flex justify-content-center align-items-center h-100">
-          <div className="text-white">
             <h1 className="mb-3">BookList</h1>
+            <img src={pic} alt="Book Stack"/>
             <h4 className="mb-3">Keep track of the books you want to read and what you have completed.</h4>
-          </div>
-        </div>
       </div>
-      </div>
-      <div>
+      <div className="bottom">
       <AddBookForm addBookCb={addBook}/>
       <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
         <div className ="endtag">
           <h3> Created by Cecelia Fowler</h3>
         </div>
-    </div>
     </div>
     </div>
   

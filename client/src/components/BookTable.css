@@ -1,7 +1,7 @@
 .table {
     margin: auto;
     width: 75% !important; 
-    margin-top: 50px;
+    margin-top: 150px;
     color: white;
  }
 
@@ -44,8 +44,3 @@
     border-radius: 4px;
     border: 1px solid transparent;
 }
-
-/* .table-striped>tbody>tr:nth-child(odd)>td, 
-.table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: #0e487a;
- } */

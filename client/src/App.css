@@ -1,8 +1,6 @@
 .App {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: whitesmoke;
-  height: 100%;
-  color: white;
+  background-color:#e9e9e9;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -11,7 +9,8 @@
 }
 
 .container{
-  max-width: 90%;
+  max-width: 70%;
+  height: 800px;
 }
 
 html, body {
@@ -20,15 +19,16 @@ html, body {
 }
 
 h1 {
-  margin-top: 50px;
-  font-size: 70px;
+  margin-top: 200px;
+  font-size: 150px;
+  color: black;
 }
 
-.descrip {
+h4 {
   margin-top: 40px;
-  font-size: 30px;
-  font-weight: 900;
-  font-family: 'Courier New', Courier, monospace
+  font-size: 35px;
+  font-weight: 100;
+  color: black;
 }
 
 .endtag h3{
@@ -37,5 +37,15 @@ h1 {
   padding: 70px;
   color: black;
   text-align: center;
-  background-color: whitesmoke;
+  background-color: white;
+}
+
+img {
+  width: 650px;
+  float: right;
+  margin-top: -700px;
+}
+
+.bottom{
+  background-color: white;
 }
