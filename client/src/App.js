@@ -91,6 +91,7 @@ async function completeBook(id) {
 
   return (
     <div className="App">
+      <div className="container">
     <div className="p-5 text-center bg-image rounded-3" style={{
         backgroundImage: `url('https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')`,
         size: '400px'}}>
@@ -107,8 +108,9 @@ async function completeBook(id) {
       <AddBookForm addBookCb={addBook}/>
       <BookTable books={books} deleteBookCb={deleteBook} completeBookCb={completeBook} />
         <div className ="endtag">
-          <h3> Created by Cecelia Fowler.</h3>
+          <h3> Created by Cecelia Fowler</h3>
         </div>
+    </div>
     </div>
     </div>
   

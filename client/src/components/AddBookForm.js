@@ -53,7 +53,7 @@ function AddBookForm(props) {
             
             <div id="boxbtn" className="row justify-content-center">
                 <div className="col-md-2 mb-4">
-                    <button id="addButton" type="button" className="btn btn-primary"> Submit </button>
+                    <button id="addButton" type="submit" className="btn btn-primary"> Submit </button>
                 </div>
             </div>
 
